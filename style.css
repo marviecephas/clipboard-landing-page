@@ -1,0 +1,207 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+h3, h4, h5 {
+    font-weight:600;
+    color:hsl(210, 10%, 33%);
+    line-height:1.3;
+}
+p, button {
+    font-weight:400;
+    font-size:1em;
+}
+p {
+    color:hsl(201, 11%, 66%);
+    line-height:1.5;
+}
+a {
+    text-decoration:none;
+    color:hsl(210, 10%, 33%);
+    background:transparent;
+    transition:color .3s;
+}
+a:active, a:hover {
+    color:hsl(171, 66%, 44%);
+    background:transparent;
+    outline:none;
+}
+button {
+    color:hsl(0, 0%, 100%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:300px;
+    padding:18px 0;
+    border-radius:30px;
+    border:none;
+    outline:none;
+    font-size:1em;
+    margin-bottom:20px;
+    transition:background .3s;
+}
+.subParentContainer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position:relative;
+    width:100vw;
+}
+.subParentContainer>*{
+    text-align:center;
+    max-width:300px;
+}
+.bgDesktop {
+    display:none;
+    position:absolute;
+    z-index:-1;
+    left:0;
+    min-width:100vw;
+}
+.bgMobile{
+    height:200px;
+    z-index:-1;
+    min-width:100vw;
+    position:absolute;
+    left:0;
+}
+.heroSectionLogo{
+    height:100px;
+    margin:100px 0 50px 0;
+}
+.firstHeroHeader{
+   font-size:1.8em;
+   margin-bottom:20px;
+}
+.firstHeroParagraph{
+    margin-bottom:40px;
+}
+.secondHeroHeader {
+    font-size:1.5em;
+    margin:100px 0 20px 0;
+}
+.downloadButtons{
+    display:flex;
+    flex-direction:column;
+}
+.forIOS {
+    background:hsl(171, 66%, 44%);
+}
+.forIOS:hover, .forIOS:active {
+    background:hsla(171, 66%, 44%, .5);
+}
+.forMac {
+    background:hsl(233, 100%, 69%);
+}
+.forMac:active, .forMac:hover {
+    background:hsla(233, 100%, 69%, .5)
+}
+.computerImage{
+    margin:50px 0;
+}
+.computerDescriptionHeader{
+    font-size:1.3em;
+    margin-bottom:20px;
+}
+.computerDescrition{
+    margin-bottom:50px;
+}
+.devicesSectionFirstHeader{
+    font-size:1.5em;
+    margin:100px 0 20px 0;
+}
+.devicesPicture{
+    margin:50px 0 80px 0;
+}
+.devicesSectionSecondHeader{
+    margin-bottom:20px;
+    font-size:1.4em;
+}
+.devicesSectionSecondParagraph{
+    margin-bottom:100px;
+}
+.abilitySection{
+    margin-bottom:50px;
+}
+.coolIcons{
+    margin-bottom:30px;
+}
+.abilitySectionHeader{
+    font-size:1.5em;
+    margin-bottom:20px;
+}
+.googleLogo{
+    margin:100px 0 50px 0;
+    height:40px;
+}
+.ibmLogo, .microsoftLogo, .hpLogo, .vectorLogo{
+    height:40px;
+    margin-bottom:50px;
+}
+.microsoftLogo, .vectorLogo {
+    height:30px;
+}
+.preFooterSectionHeader{
+    font-size:1.5em;
+    margin:100px 0 20px 0;
+}
+.preFooterSectionParagraph{
+    margin-bottom:50px;
+}
+.footerSection {
+    margin-top:100px;
+    padding:30px 0;
+    background:hsla(201, 11%, 66%, .1);
+}
+.footerSectionLogo{
+    height:50px;
+    margin-bottom:30px;
+}
+.redirect{
+    margin-bottom:25px;
+    min-width:300px;
+}
+.footerIcons>*{
+    margin-right:30px;
+}
+.footerIcons>*:nth-child(3){
+    margin:0;
+}
+.footerIcons{
+    margin-top:15px;
+    display:flex;
+}
+@media (min-width:800px){
+    .subParentContainer>*{
+        max-width:800px;
+    }
+    .downloadButtons{
+        flex-direction:row;
+        justify-content:space-between;
+    }
+    button {
+        font-size:1.3em;
+    }
+    button:first-child {
+        margin-right:20px;
+    }
+    .logozone {
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+    }
+    .logozone>*{
+       margin:100px 20px 80px 0;
+       align-self:center;
+       text-align:center;
+    }
+    .footerSection{
+        display:flex;
+        flex-direction:row;
+        align-items:flex-start;
+        justify-content:center;
+    }
+}
